@@ -3,7 +3,7 @@ extends Node3D
 ## only turns its event stream into camera moves, animations, effects and HUD.
 
 const ANCHORS := [Vector3(-1.9, 0, 1.4), Vector3(2.1, 0, -1.9)]
-const CAM_WIDE := [Vector3(-4.6, 2.6, 6.2), Vector3(0.6, 0.7, -0.9)]
+const CAM_WIDE := [Vector3(-4.4, 2.2, 6.6), Vector3(0.5, -0.1, -0.6)]
 const CAM_SIDE := [
 	[Vector3(-4.2, 1.9, 3.6), Vector3(0.6, 0.7, -0.9)], # player attacking
 	[Vector3(4.6, 2.0, -0.2), Vector3(-1.0, 0.7, 0.2)], # foe attacking
@@ -17,6 +17,7 @@ var vfx: Node3D
 var speed := 1.0
 var auto_play := false
 var return_scene := ""
+var _effect_captured := false
 
 # HUD
 var message: Label
@@ -60,16 +61,17 @@ func _build_stage() -> void:
 	sky.sky_material = sky_mat
 	env.background_mode = Environment.BG_SKY
 	env.sky = sky
-	env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
-	env.ambient_light_energy = 0.9
-	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
+	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	env.ambient_light_color = Color(0.62, 0.68, 0.8)
+	env.ambient_light_energy = 0.45
+	env.tonemap_mode = Environment.TONE_MAPPER_LINEAR
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)
 
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-50, -35, 0)
-	sun.light_energy = 1.2
+	sun.light_energy = 0.85
 	sun.shadow_enabled = true
 	add_child(sun)
 
@@ -80,7 +82,7 @@ func _build_stage() -> void:
 	add_child(Placeholder.part(arena, Toon.material(Color("cdbb8a"), false), Vector3(0, 0.03, -0.2)))
 	for a in ANCHORS:
 		var pad := Placeholder.cylinder(1.0, 1.05, 0.1, 32)
-		add_child(Placeholder.part(pad, Toon.material(Color("a7c98a")), a + Vector3(0, 0.05, 0)))
+		add_child(Placeholder.part(pad, Toon.material(Color("a7c98a"), false), a + Vector3(0, 0.05, 0)))
 	# Background trees ring the arena.
 	for i in 14:
 		var ang := float(i) / 14.0 * TAU
@@ -429,6 +431,9 @@ func _move_effect(e: Dictionary) -> void:
 	var hit_time: float = assets.get("hit_time", 0.4)
 	var color := Game.type_color(e.type)
 	await _camera_to(CAM_SIDE[side][0], CAM_SIDE[side][1], 0.35)
+	if not _effect_captured and e.category != "status":
+		_effect_captured = true
+		get_tree().create_timer(hit_time * 0.6 * speed).timeout.connect(Game.capture.bind("battle_effect"))
 	if e.category == "status":
 		await vfx.play(template, _mon_center(side), _mon_center(side), color, hit_time)
 	elif template == "contact_strike":

@@ -4,7 +4,7 @@ extends Node3D
 
 const DIRS := {"north": Vector2i(0, -1), "south": Vector2i(0, 1), "east": Vector2i(1, 0), "west": Vector2i(-1, 0)}
 const STEP_TIME := 0.16
-const CAM_OFFSET := Vector3(0, 8.5, 7.0)
+const CAM_OFFSET := Vector3(0, 10.0, 9.5)
 const ENCOUNTER_CHANCE := 0.15
 const SKILL_VERB := {"cut": "cut down", "smash": "smashed"}
 
@@ -30,7 +30,7 @@ func _ready() -> void:
 	add_child(player)
 	_place_player(Game.player_tile, Game.player_facing)
 	camera.position = player.position + CAM_OFFSET
-	camera.look_at(player.position + Vector3(0, 0.5, 0))
+	camera.look_at(player.position + Vector3(0, 0.5, 0.8))
 	if Game.smoke:
 		_run_smoke.call_deferred()
 
@@ -44,15 +44,16 @@ func _build_environment() -> void:
 	sky.sky_material = sky_mat
 	env.background_mode = Environment.BG_SKY
 	env.sky = sky
-	env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
-	env.ambient_light_energy = 0.85
-	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
+	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	env.ambient_light_color = Color(0.62, 0.68, 0.8)
+	env.ambient_light_energy = 0.45
+	env.tonemap_mode = Environment.TONE_MAPPER_LINEAR
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-55, -30, 0)
-	sun.light_energy = 1.15
+	sun.light_energy = 0.85
 	sun.shadow_enabled = true
 	add_child(sun)
 	camera = Camera3D.new()

@@ -7,7 +7,8 @@ static func material(color: Color, outline := true, outline_width := 0.03) -> St
 	m.albedo_color = color
 	m.diffuse_mode = BaseMaterial3D.DIFFUSE_TOON
 	m.specular_mode = BaseMaterial3D.SPECULAR_TOON
-	m.roughness = 0.85
+	m.roughness = 1.0
+	m.metallic_specular = 0.2
 	if outline:
 		var o := StandardMaterial3D.new()
 		o.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED

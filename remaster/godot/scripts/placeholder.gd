@@ -129,9 +129,9 @@ static func world_object(p: Dictionary) -> Node3D:
 				if not is_door and i > 0 and i < int(w) - 1:
 					root.add_child(part(box(Vector3(0.5, 0.45, 0.06)), glass, Vector3(i + 0.5, wall_h * 0.6, d - 0.18)))
 		"tree_round", "tree_large":
-			var big := p.object == "tree_large"
-			var leaf := Color("e08a3a") if model.contains("autumn") else Color("3f9a4a")
-			var s := 1.6 if big else 1.0
+			var big: bool = p.object == "tree_large"
+			var leaf: Color = Color("e08a3a") if model.contains("autumn") else Color("3f9a4a")
+			var s: float = 1.6 if big else 1.0
 			root.add_child(part(cylinder(0.12 * s, 0.16 * s, 0.9 * s, 8), Toon.material(Color("7a5434")), center + Vector3(0, 0.45 * s, 0)))
 			root.add_child(part(sphere(0.55 * s, 10), Toon.material(leaf), center + Vector3(0, 1.25 * s, 0)))
 			root.add_child(part(sphere(0.4 * s, 10), Toon.material(leaf.lightened(0.12)), center + Vector3(0.15 * s, 1.75 * s, 0.05)))
