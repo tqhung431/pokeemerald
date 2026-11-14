@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/core-data", "crates/core-battle"]
+members = ["crates/core-data", "crates/core-battle", "crates/core-world", "crates/godot-bridge"]
 
 [workspace.package]
 edition = "2021"

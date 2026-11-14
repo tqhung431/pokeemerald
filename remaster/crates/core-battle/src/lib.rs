@@ -4,6 +4,7 @@
 //! happened, in order; a presentation layer replays them as animations. Given
 //! the same data, parties, seed and actions, the event stream is identical.
 
+pub mod ai;
 mod battler;
 mod damage;
 mod rng;
@@ -16,6 +17,7 @@ use core_data::{Category, EffectKind, GameData, Matchup, MoveId, Stat, Status, T
 use serde::Serialize;
 use std::cmp::Ordering;
 use std::fmt;
+use std::sync::Arc;
 
 /// Index of a side: 0 or 1.
 pub type SideId = usize;
@@ -152,18 +154,18 @@ impl Side {
 }
 
 #[derive(Debug, Clone)]
-pub struct Battle<'a> {
-    data: &'a GameData,
+pub struct Battle {
+    data: Arc<GameData>,
     sides: [Side; 2],
     rng: Rng,
     turn: u32,
     phase: Phase,
 }
 
-impl<'a> Battle<'a> {
+impl Battle {
     /// Starts a battle with each party's first healthy creature active.
     pub fn new(
-        data: &'a GameData,
+        data: Arc<GameData>,
         parties: [Vec<Battler>; 2],
         seed: u64,
     ) -> Result<Self, ActionError> {
@@ -183,6 +185,11 @@ impl<'a> Battle<'a> {
             turn: 0,
             phase: Phase::Choose,
         })
+    }
+
+    /// The rules data this battle was created with.
+    pub fn data(&self) -> &GameData {
+        &self.data
     }
 
     pub fn phase(&self) -> Phase {
@@ -308,7 +315,7 @@ impl<'a> Battle<'a> {
     }
 
     fn use_move(&mut self, side: SideId, slot: usize, ev: &mut Vec<Event>) {
-        let data = self.data;
+        let data = Arc::clone(&self.data);
         let foe = 1 - side;
 
         if self.active(side).status == Some(Status::Paralysis) && self.rng.chance(25) {

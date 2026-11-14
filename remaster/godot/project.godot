@@ -1,0 +1,24 @@
+; Engine configuration file.
+
+config_version=5
+
+[application]
+
+config/name="Remaster Prototype"
+config/description="3D prototype driven by the Rust core crates."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+
+[autoload]
+
+Game="*res://scripts/game.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2

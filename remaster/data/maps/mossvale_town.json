@@ -1,0 +1,524 @@
+{
+ "id": "mossvale_town",
+ "name": "Mossvale Town",
+ "width": 24,
+ "height": 18,
+ "spawn": [
+  5,
+  6
+ ],
+ "placements": [
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 1,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 1,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 2,
+   "y": 0,
+   "variant": "autumn"
+  },
+  {
+   "object": "tree_round",
+   "x": 2,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 3,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 3,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 4,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 4,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 5,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 5,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 6,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 6,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 7,
+   "y": 0,
+   "variant": "autumn"
+  },
+  {
+   "object": "tree_round",
+   "x": 7,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 8,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 8,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 9,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 9,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 10,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 10,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 11,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 11,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 12,
+   "y": 0,
+   "variant": "autumn"
+  },
+  {
+   "object": "tree_round",
+   "x": 12,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 13,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 14,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 15,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 16,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 17,
+   "y": 0,
+   "variant": "autumn"
+  },
+  {
+   "object": "tree_round",
+   "x": 17,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 18,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 19,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 19,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 20,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 20,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 21,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 21,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 22,
+   "y": 0,
+   "variant": "autumn"
+  },
+  {
+   "object": "tree_round",
+   "x": 22,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 0
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 17
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 1
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 1
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 2
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 2
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 3
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 3
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 4
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 4
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 5
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 5
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 6
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 6
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 7
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 7
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 8
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 9
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 10
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 10
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 11
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 11
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 12
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 12
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 13
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 14
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 14
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 15
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 15
+  },
+  {
+   "object": "tree_round",
+   "x": 0,
+   "y": 16
+  },
+  {
+   "object": "tree_round",
+   "x": 23,
+   "y": 16
+  },
+  {
+   "object": "house_small",
+   "x": 3,
+   "y": 2,
+   "warp": "player_house_1f"
+  },
+  {
+   "object": "house_small",
+   "x": 10,
+   "y": 2,
+   "variant": "roof_red",
+   "warp": "rival_house_1f"
+  },
+  {
+   "object": "heal_center",
+   "x": 15,
+   "y": 2,
+   "warp": "heal_center_1f"
+  },
+  {
+   "object": "item_shop",
+   "x": 3,
+   "y": 10,
+   "warp": "item_shop_1f"
+  },
+  {
+   "object": "tree_large",
+   "x": 11,
+   "y": 11
+  },
+  {
+   "object": "tree_large",
+   "x": 14,
+   "y": 13
+  },
+  {
+   "object": "signpost",
+   "x": 6,
+   "y": 7,
+   "text": "Welcome to Mossvale Town. A quiet start."
+  },
+  {
+   "object": "signpost",
+   "x": 20,
+   "y": 7,
+   "text": "East: Route 1"
+  },
+  {
+   "object": "berry_plant",
+   "x": 10,
+   "y": 6
+  },
+  {
+   "object": "item_capsule",
+   "x": 17,
+   "y": 10
+  },
+  {
+   "object": "bush_cuttable",
+   "x": 21,
+   "y": 8
+  },
+  {
+   "object": "rock_breakable",
+   "x": 21,
+   "y": 9
+  },
+  {
+   "object": "boulder",
+   "x": 10,
+   "y": 15
+  },
+  {
+   "object": "fence_segment",
+   "x": 15,
+   "y": 15
+  },
+  {
+   "object": "fence_segment",
+   "x": 16,
+   "y": 15
+  },
+  {
+   "object": "fence_segment",
+   "x": 17,
+   "y": 15
+  },
+  {
+   "object": "fence_segment",
+   "x": 18,
+   "y": 15
+  },
+  {
+   "object": "flower_patch",
+   "x": 9,
+   "y": 7
+  },
+  {
+   "object": "flower_patch",
+   "x": 13,
+   "y": 7
+  },
+  {
+   "object": "flower_patch",
+   "x": 2,
+   "y": 15
+  },
+  {
+   "object": "flower_patch",
+   "x": 19,
+   "y": 12
+  },
+  {
+   "object": "flower_patch",
+   "x": 20,
+   "y": 12
+  }
+ ]
+}
