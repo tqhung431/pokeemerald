@@ -1,0 +1,20 @@
+[
+  { "id": "emberkit", "name": "Emberkit", "types": ["ember"],
+    "base_stats": { "hp": 45, "attack": 60, "defense": 40, "sp_attack": 70, "sp_defense": 50, "speed": 65 },
+    "learnset": [ { "level": 1, "move": "bump" }, { "level": 1, "move": "snarl" }, { "level": 5, "move": "cinder" }, { "level": 9, "move": "quick_dash" } ] },
+  { "id": "pondling", "name": "Pondling", "types": ["tide"],
+    "base_stats": { "hp": 50, "attack": 50, "defense": 65, "sp_attack": 60, "sp_defense": 64, "speed": 43 },
+    "learnset": [ { "level": 1, "move": "bump" }, { "level": 1, "move": "snarl" }, { "level": 5, "move": "splash_shot" }, { "level": 9, "move": "harden_shell" } ] },
+  { "id": "sproutail", "name": "Sproutail", "types": ["bloom"],
+    "base_stats": { "hp": 45, "attack": 55, "defense": 55, "sp_attack": 65, "sp_defense": 65, "speed": 45 },
+    "learnset": [ { "level": 1, "move": "bump" }, { "level": 3, "move": "thorn_whip" }, { "level": 7, "move": "spore_cloud" } ] },
+  { "id": "zapmoth", "name": "Zapmoth", "types": ["volt", "gale"],
+    "base_stats": { "hp": 40, "attack": 35, "defense": 40, "sp_attack": 70, "sp_defense": 50, "speed": 85 },
+    "learnset": [ { "level": 1, "move": "gust_cutter" }, { "level": 4, "move": "static_jolt" }, { "level": 8, "move": "quick_dash" } ] },
+  { "id": "cobblet", "name": "Cobblet", "types": ["stone"],
+    "base_stats": { "hp": 50, "attack": 75, "defense": 95, "sp_attack": 30, "sp_defense": 30, "speed": 20 },
+    "learnset": [ { "level": 1, "move": "bump" }, { "level": 1, "move": "harden_shell" }, { "level": 6, "move": "pebble_toss" } ] },
+  { "id": "duskit", "name": "Duskit", "types": ["shade"],
+    "base_stats": { "hp": 40, "attack": 65, "defense": 35, "sp_attack": 55, "sp_defense": 45, "speed": 80 },
+    "learnset": [ { "level": 1, "move": "night_claw" }, { "level": 1, "move": "snarl" }, { "level": 8, "move": "quick_dash" } ] }
+]

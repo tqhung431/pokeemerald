@@ -1,0 +1,336 @@
+{
+  "creatures": {
+    "emberkit": {
+      "model": "res://assets/creatures/emberkit.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    },
+    "pondling": {
+      "model": "res://assets/creatures/pondling.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    },
+    "sproutail": {
+      "model": "res://assets/creatures/sproutail.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    },
+    "zapmoth": {
+      "model": "res://assets/creatures/zapmoth.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    },
+    "cobblet": {
+      "model": "res://assets/creatures/cobblet.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    },
+    "duskit": {
+      "model": "res://assets/creatures/duskit.glb",
+      "scale": 1.0,
+      "animations": {
+        "idle": "idle",
+        "physical": "attack_physical",
+        "special": "attack_special",
+        "hit": "hit",
+        "faint": "faint"
+      }
+    }
+  },
+  "moves": {
+    "bump": {
+      "vfx": "contact_strike",
+      "element": "neutral",
+      "hit_time": 0.4
+    },
+    "quick_dash": {
+      "vfx": "contact_strike",
+      "element": "neutral",
+      "hit_time": 0.4
+    },
+    "snarl": {
+      "vfx": "aura",
+      "element": "neutral",
+      "hit_time": 0.4
+    },
+    "cinder": {
+      "vfx": "projectile",
+      "element": "ember",
+      "hit_time": 0.4
+    },
+    "splash_shot": {
+      "vfx": "projectile",
+      "element": "tide",
+      "hit_time": 0.4
+    },
+    "thorn_whip": {
+      "vfx": "contact_strike",
+      "element": "bloom",
+      "hit_time": 0.4
+    },
+    "spore_cloud": {
+      "vfx": "aura",
+      "element": "bloom",
+      "hit_time": 0.4
+    },
+    "static_jolt": {
+      "vfx": "projectile",
+      "element": "volt",
+      "hit_time": 0.4
+    },
+    "pebble_toss": {
+      "vfx": "contact_strike",
+      "element": "stone",
+      "hit_time": 0.4
+    },
+    "harden_shell": {
+      "vfx": "aura",
+      "element": "stone",
+      "hit_time": 0.4
+    },
+    "gust_cutter": {
+      "vfx": "projectile",
+      "element": "gale",
+      "hit_time": 0.4
+    },
+    "night_claw": {
+      "vfx": "contact_strike",
+      "element": "shade",
+      "hit_time": 0.4
+    }
+  },
+  "objects": {
+    "house_small": {
+      "model": "res://assets/objects/house_small.glb",
+      "category": "building",
+      "footprint": [
+        5,
+        4
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 3
+        }
+      ],
+      "animations": {
+        "open": "door_open"
+      },
+      "variants": {
+        "roof_red": "res://assets/objects/house_small_red.glb"
+      }
+    },
+    "heal_center": {
+      "model": "res://assets/objects/heal_center.glb",
+      "category": "building",
+      "footprint": [
+        7,
+        5
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 4
+        }
+      ],
+      "animations": {
+        "open": "door_open"
+      }
+    },
+    "item_shop": {
+      "model": "res://assets/objects/item_shop.glb",
+      "category": "building",
+      "footprint": [
+        6,
+        5
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 4
+        }
+      ],
+      "animations": {
+        "open": "door_open"
+      }
+    },
+    "tree_round": {
+      "model": "res://assets/objects/tree_round.glb",
+      "category": "nature",
+      "footprint": [
+        1,
+        1
+      ],
+      "variants": {
+        "autumn": "res://assets/objects/tree_round_autumn.glb"
+      }
+    },
+    "tree_large": {
+      "model": "res://assets/objects/tree_large.glb",
+      "category": "nature",
+      "footprint": [
+        2,
+        2
+      ]
+    },
+    "bush_cuttable": {
+      "model": "res://assets/objects/bush_cuttable.glb",
+      "category": "obstacle",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "field_skill",
+        "skill": "cut"
+      },
+      "animations": {
+        "destroy": "cut"
+      }
+    },
+    "rock_breakable": {
+      "model": "res://assets/objects/rock_breakable.glb",
+      "category": "obstacle",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "field_skill",
+        "skill": "smash"
+      },
+      "animations": {
+        "destroy": "shatter"
+      }
+    },
+    "boulder": {
+      "model": "res://assets/objects/boulder.glb",
+      "category": "obstacle",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "push"
+      }
+    },
+    "berry_plant": {
+      "model": "res://assets/objects/berry_plant.glb",
+      "category": "nature",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "harvest"
+      },
+      "animations": {
+        "grow": "grow",
+        "harvest": "harvest"
+      }
+    },
+    "item_capsule": {
+      "model": "res://assets/objects/item_capsule.glb",
+      "category": "prop",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "pickup"
+      }
+    },
+    "signpost": {
+      "model": "res://assets/objects/signpost.glb",
+      "category": "prop",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "read"
+      }
+    },
+    "fence_segment": {
+      "model": "res://assets/objects/fence_segment.glb",
+      "category": "prop",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    "flower_patch": {
+      "model": "res://assets/objects/flower_patch.glb",
+      "category": "nature",
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false
+    },
+    "pc_terminal": {
+      "model": "res://assets/objects/pc_terminal.glb",
+      "category": "furniture",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "script",
+        "script": "pc_storage"
+      }
+    },
+    "bookshelf": {
+      "model": "res://assets/objects/bookshelf.glb",
+      "category": "furniture",
+      "footprint": [
+        2,
+        1
+      ],
+      "interaction": {
+        "kind": "read"
+      }
+    },
+    "television": {
+      "model": "res://assets/objects/television.glb",
+      "category": "furniture",
+      "footprint": [
+        1,
+        1
+      ],
+      "interaction": {
+        "kind": "read"
+      }
+    }
+  }
+}

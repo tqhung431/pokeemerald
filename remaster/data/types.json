@@ -1,0 +1,13 @@
+{
+  "types": ["neutral", "ember", "tide", "bloom", "volt", "stone", "gale", "shade"],
+  "chart": {
+    "neutral": { "stone": 0.5, "shade": 0 },
+    "ember":   { "bloom": 2, "tide": 0.5, "ember": 0.5, "stone": 0.5 },
+    "tide":    { "ember": 2, "stone": 2, "tide": 0.5, "bloom": 0.5 },
+    "bloom":   { "tide": 2, "stone": 2, "ember": 0.5, "bloom": 0.5, "gale": 0.5 },
+    "volt":    { "tide": 2, "gale": 2, "volt": 0.5, "bloom": 0.5, "stone": 0 },
+    "stone":   { "ember": 2, "gale": 2, "volt": 2, "bloom": 0.5 },
+    "gale":    { "bloom": 2, "volt": 0.5, "stone": 0.5 },
+    "shade":   { "shade": 2, "neutral": 0 }
+  }
+}

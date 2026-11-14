@@ -1,0 +1,19 @@
+[
+  { "id": "bump", "name": "Bump", "type": "neutral", "category": "physical", "power": 40, "accuracy": 100, "pp": 35 },
+  { "id": "quick_dash", "name": "Quick Dash", "type": "neutral", "category": "physical", "power": 40, "accuracy": 100, "pp": 30, "priority": 1 },
+  { "id": "snarl", "name": "Snarl", "type": "neutral", "category": "status", "accuracy": 100, "pp": 40,
+    "effects": [ { "kind": "stat_stage", "stat": "attack", "stages": -1, "target": "foe" } ] },
+  { "id": "cinder", "name": "Cinder", "type": "ember", "category": "special", "power": 40, "accuracy": 100, "pp": 25,
+    "effects": [ { "kind": "status", "status": "burn", "chance": 10, "target": "foe" } ] },
+  { "id": "splash_shot", "name": "Splash Shot", "type": "tide", "category": "special", "power": 40, "accuracy": 100, "pp": 25 },
+  { "id": "thorn_whip", "name": "Thorn Whip", "type": "bloom", "category": "physical", "power": 45, "accuracy": 100, "pp": 25 },
+  { "id": "spore_cloud", "name": "Spore Cloud", "type": "bloom", "category": "status", "accuracy": 75, "pp": 35,
+    "effects": [ { "kind": "status", "status": "poison", "target": "foe" } ] },
+  { "id": "static_jolt", "name": "Static Jolt", "type": "volt", "category": "special", "power": 40, "accuracy": 100, "pp": 30,
+    "effects": [ { "kind": "status", "status": "paralysis", "chance": 10, "target": "foe" } ] },
+  { "id": "pebble_toss", "name": "Pebble Toss", "type": "stone", "category": "physical", "power": 50, "accuracy": 90, "pp": 15 },
+  { "id": "harden_shell", "name": "Harden Shell", "type": "stone", "category": "status", "pp": 30,
+    "effects": [ { "kind": "stat_stage", "stat": "defense", "stages": 1, "target": "self" } ] },
+  { "id": "gust_cutter", "name": "Gust Cutter", "type": "gale", "category": "special", "power": 40, "accuracy": 100, "pp": 35 },
+  { "id": "night_claw", "name": "Night Claw", "type": "shade", "category": "physical", "power": 40, "accuracy": 100, "pp": 30 }
+]
